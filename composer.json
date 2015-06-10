@@ -1,0 +1,27 @@
+{
+    "name": "klsandbox/timeline-events",
+    "description": "",
+    "authors": [
+        {
+            "name": "Ibrahim Abdul Rahim",
+            "email": "mrwaim@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "klsandbox/site-model": "0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Klsandbox\\TimelineEvents": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:mrwaim/sitemodel.git"
+        }
+    ]
+}
