@@ -31,15 +31,8 @@ use Klsandbox\SiteModel\Site;
  */
 class TimelineEvent extends Model {
 
+    use \Klsandbox\SiteModel\SiteExtensions;
+
     protected $fillable = ['created_at', 'user_id', 'controller', 'route', 'target_id', 'parameter_id', 'parameter_text'];
 
-    public static function boot() {
-        parent::boot();
-
-        self::creating(function($item) {
-            $item->site_id = Site::id();
-
-            return true;
-        });
-    }
 }
