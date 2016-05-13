@@ -28,6 +28,7 @@ use Klsandbox\SiteModel\Site;
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereTargetId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereParameterId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereParameterText($value)
+ * @mixin \Eloquent
  */
 class TimelineEvent extends Model {
 
