@@ -4,8 +4,8 @@ namespace Klsandbox\TimelineEvents;
 
 use Illuminate\Support\ServiceProvider;
 
-class TimelineEventsServiceProvider extends ServiceProvider {
-
+class TimelineEventsServiceProvider extends ServiceProvider
+{
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -18,7 +18,8 @@ class TimelineEventsServiceProvider extends ServiceProvider {
      *
      * @return void
      */
-    public function register() {
+    public function register()
+    {
         //
     }
 
@@ -27,13 +28,15 @@ class TimelineEventsServiceProvider extends ServiceProvider {
      *
      * @return array
      */
-    public function provides() {
+    public function provides()
+    {
         return [];
     }
 
-    public function boot() {
+    public function boot()
+    {
         $this->publishes([
-            __DIR__ . '/../../../database/migrations/' => database_path('/migrations')
+            __DIR__ . '/../../../database/migrations/' => database_path('/migrations'),
                 ], 'migrations');
     }
 }

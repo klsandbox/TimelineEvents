@@ -3,7 +3,6 @@
 namespace Klsandbox\TimelineEvents;
 
 use Illuminate\Database\Eloquent\Model;
-use Klsandbox\SiteModel\Site;
 
 /**
  * App\Models\TimelineEvent
@@ -18,6 +17,7 @@ use Klsandbox\SiteModel\Site;
  * @property integer $target_id
  * @property integer $parameter_id
  * @property string $parameter_text
+ *
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereSiteId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereCreatedAt($value)
@@ -30,10 +30,9 @@ use Klsandbox\SiteModel\Site;
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereParameterText($value)
  * @mixin \Eloquent
  */
-class TimelineEvent extends Model {
-
+class TimelineEvent extends Model
+{
     use \Klsandbox\SiteModel\SiteExtensions;
 
     protected $fillable = ['created_at', 'user_id', 'controller', 'route', 'target_id', 'parameter_id', 'parameter_text'];
-
 }
