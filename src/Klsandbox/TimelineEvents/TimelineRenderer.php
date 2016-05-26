@@ -28,7 +28,8 @@ class TimelineRenderer
         }
 
         $request = Request::create($url, 'GET');
-        Input::initialize($event->toArray());
+        $request->event = $event;
+        Input::initialize(['event' => $event]);
 
         $out = $this->router->dispatch($request)->getContent();
 
