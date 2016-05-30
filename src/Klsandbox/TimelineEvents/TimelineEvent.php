@@ -30,6 +30,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereParameterId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereParameterText($value)
  * @mixin \Eloquent
+ *
+ * @property-read \App\Models\User $user
  */
 class TimelineEvent extends Model
 {
