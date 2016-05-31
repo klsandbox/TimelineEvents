@@ -18,7 +18,6 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $target_id
  * @property integer $parameter_id
  * @property string $parameter_text
- *
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereSiteId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereCreatedAt($value)
@@ -30,7 +29,6 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereParameterId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Models\TimelineEvent whereParameterText($value)
  * @mixin \Eloquent
- *
  * @property-read \App\Models\User $user
  */
 class TimelineEvent extends Model
