@@ -33,7 +33,6 @@ use Illuminate\Database\Eloquent\Model;
  */
 class TimelineEvent extends Model
 {
-
     protected $fillable = ['created_at', 'user_id', 'controller', 'route', 'target_id', 'parameter_id', 'parameter_text'];
 
     public function user()
